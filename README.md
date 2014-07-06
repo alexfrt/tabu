@@ -15,7 +15,7 @@ You may want to check the Javadocs for detailed informations
 
 1. Implement the 'Solution' interface according to the problem
 2. Setup your problem instance and the initial solution
-3. Setup the evironment to the problem characteristcs
+3. Setup the environment to the problem characteristcs
     1. Select (or implement) your 'StopCondition'
     2. Select (or implement) your 'TabuList'
     3. Select (but probably you'll implement) your 'BestNeighborSolutionLocator'
