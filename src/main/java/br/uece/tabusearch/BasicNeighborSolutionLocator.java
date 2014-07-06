@@ -7,8 +7,19 @@ import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.Predicate;
 
+/**
+ * Basic implementation of {@link BasicNeighborSolutionLocator}, that doensn't have any Aspiration Criteria
+ * and simply returns the non-tabu {@link Solution} with the lowest value.
+ * 
+ * @author Alex Ferreira
+ *
+ */
 public class BasicNeighborSolutionLocator implements BestNeighborSolutionLocator {
 
+	/**
+	 * Find the non-tabu {@link Solution} with the lowest value.<br>
+	 * This method doesn't use any Aspiration Criteria.
+	 */
 	@Override
 	public Solution findBestNeighbor(List<Solution> neighborsSolutions, final List<Solution> solutionsInTabu) {
 		//remove any neighbor that is in tabu list
