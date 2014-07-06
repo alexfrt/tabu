@@ -31,6 +31,8 @@ public class TabuSearch {
 				bestSolution = bestNeighborFound;
 			}
 			
+			currentSolution = bestNeighborFound;
+			
 			tabuList.add(currentSolution);
 			tabuList.updateSize(currentIteration, bestSolution);
 		}
